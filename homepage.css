@@ -1,0 +1,240 @@
+body {
+    margin:0 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F9FE;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0; 
+}
+
+/* Flexbox styling untuk header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.home {
+    flex: 1;
+    text-align: center;
+}
+
+.home a {
+    text-decoration: none;
+    color: #223344;
+    padding: 10px;
+    display: inline-block;
+}
+
+.home a:hover {
+    color: #909193;
+}
+
+.toggle-switch {
+    margin-left: 15rem;
+    width: 60px;
+    height: 20px;
+    background-color: #2c3e50;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.icon2 {
+    background-color: #ffff;
+    border-radius: 100%;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.text-content {
+    max-width: 100%;
+    margin-bottom: 10rem;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+}
+
+.text-content .comment {
+    margin-bottom: 35px;
+}
+
+.button {
+    background-color: #2A4DD0;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px; /* Only this one */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button1 {
+    padding-left: 30px;
+    font-weight: bold;
+    color: #2A4DD0;
+}
+
+.img-page img {
+    max-width: 85%;
+    margin-left: 8rem;
+    margin-bottom: 10rem;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.check p {
+    display: flex;
+    align-items: center;
+}
+
+.check img {
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* CSS untuk layar kecil seperti ponsel */
+/* Responsive untuk layar dengan lebar 1024px */
+@media only screen and (max-width: 1024px) {
+    .container-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img-page img {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        margin-bottom: 2rem;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .home {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+        background-color: #2A4DD0;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #111729;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .toggle-switch {
+        margin-left: 0rem;
+        width: 60px;
+        height: 20px;
+        background-color: #2c3e50;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img-page img {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+
+    .button1 {
+        font-size: 13px;
+    }
+}
